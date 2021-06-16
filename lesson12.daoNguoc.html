@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành Đảo ngược phần tử trong Array</title>
+</head>
+<body>
+<script>
+    let n = [1,9,9,2,1,9,9,4];
+    let first = 0;
+    let last = n.length - 1;
+    while (first < last) {
+        let b = n[first];
+        n[first] = n[last];
+        n[last] = b;
+        first++;
+        last--;
+    }
+    document.write(n);
+</script>
+</body>
+</html>
